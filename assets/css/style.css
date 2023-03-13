@@ -1,0 +1,19 @@
+.bg-nav{
+    background-color: rgb(44 62 80);
+}
+
+.bg-avatar{
+    background-color: rgb(26 188 156);
+}
+
+.icona{
+    width: 25px;
+    height: 50px;
+    color: white;
+}
+
+.barra{
+    height: 3px;
+    width: 50px;
+    background-color: white;
+}
