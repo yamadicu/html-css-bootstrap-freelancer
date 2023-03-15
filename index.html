@@ -20,18 +20,25 @@
 <body>
     
     <nav class="navbar navbar-expand-md bg-nav">
-        <!-- METTERE SPACE BETWEEN -->
-        <div class="container-fluid">
+        
+        <div class="container">
           <a class="navbar-brand h1 text-light" href="#">START BOOTSTRAP</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link text-light" href="#">PORTFOLIO</a>
-              <a class="nav-link text-light" href="#">ABOUT</a>
-              <a class="nav-link text-light">CONTACT</a>
-            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light">CONTACT</a>
+                </li>
+                
+            </ul>
           </div>
         </div>
     </nav>
@@ -41,7 +48,7 @@
         <div class="bg-green content mb-2">
             <div class="row mx-0">
 
-                <img class="col-4 mx-auto mt-2" src="./assets/img/avatar.svg" alt="avatar">
+                <img class="col-4 col-md-2 mx-auto mt-2" src="./assets/img/avatar.svg" alt="avatar">
 
                 <span class="text-light h1 text-center px-0">START BOOTSTRAP</span>
 
@@ -77,34 +84,36 @@
             </div>
 
             <!-- IMMAGINI -->
-            <div class="mt-2 mx-2 d-flex flex-wrap justify-content-center">
+            <div class="container py-5">
 
-                <div class="col-11 col-md-5 col-lg-4 mb-2">
-                    <img class="container-fluid rounded-5" src="./assets/img/cabin.png" alt="immagine">
+                <div  class="row">
+
+                    <div class="col-12 col-md-5 col-lg-4 mb-2">
+                        <img class="img-fluid rounded-5" src="./assets/img/cabin.png" alt="immagine">
+                    </div>
+                    
+                    <div class="col-12 col-md-5 col-lg-4 mb-2">
+                        <img class="img-fluid rounded-5" src="./assets/img/cake.png" alt="immagine">
+                    </div>
+                    
+                    <div class="col-12 col-md-5 col-lg-4 mb-2">
+                        <img class="img-fluid rounded-5" src="./assets/img/circus.png" alt="immagine">
+                    </div>
+                    
+                    <div class="col-12 col-md-5 col-lg-4 mb-2">
+                        <img class="img-fluid rounded-5" src="./assets/img/game.png" alt="immagine">
+                    </div>
+                    
+                    <div class="col-12 col-md-5 col-lg-4 mb-2">
+                        <img class="img-fluid rounded-5" src="./assets/img/safe.png" alt="immagine">
+                    </div>
+                    
+                    <div class="col-12 col-md-5 col-lg-4 mb-2">
+                        <img class="img-fluid rounded-5" src="./assets/img/submarine.png" alt="immagine">
+                    </div>
+
                 </div>
 
-                <div class="col-11 col-md-5 col-lg-4 mb-2">
-                    <img class="container-fluid rounded-5" src="./assets/img/cake.png" alt="immagine">
-                </div>
-
-                <div class="col-11 col-md-5 col-lg-4 mb-2">
-                    <img class="container-fluid rounded-5" src="./assets/img/circus.png" alt="immagine">
-                </div>
-
-                <div class="col-11 col-md-5 col-lg-4 mb-2">
-                    <img class="container-fluid rounded-5" src="./assets/img/game.png" alt="immagine">
-                </div>
-
-                <div class="col-11 col-md-5 col-lg-4 mb-2">
-                    <img class="container-fluid rounded-5" src="./assets/img/safe.png" alt="immagine">
-                </div>
-
-                <div class="col-11 col-md-5 col-lg-4 mb-2">
-                    <img class="container-fluid rounded-5" src="./assets/img/submarine.png" alt="immagine">
-                </div>
-
-
-                <!-- mt-2 container-fluid rounded-5 -->
             </div>
 
         </div>
@@ -123,7 +132,7 @@
 
                 </div>
 
-                <div class="d-flex flex-wrap justify-content-center">
+                <div class="container d-flex flex-wrap justify-content-center">
 
                     <span class="text-light col-md-5 mx-3 pb-2">Freelancer is a free bootstrap theme created by Star Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</span>
                     
@@ -138,29 +147,39 @@
         </div>
 
         <!-- CONTACT ME -->
-        <div class="text-center pt-3">
+        
+        <div class="container">
 
-            <h1>CONTACT ME</h1>
+            <div class="text-center pt-3">
 
-            <div class="d-flex justify-content-center col-5 mx-auto mt-2">
+                <h1>CONTACT ME</h1>
+                
+                <div class="d-flex justify-content-center col-5 mx-auto mt-2">
+                    
+                    <div class="barra-black my-2"></div>
+                    <i class="fa-solid fa-star icona-black px-1"></i>
+                    <div class="barra-black my-2"></div>
+                    
+                </div>
+                
+                <div class="mx-5 container">
+                    <input type="text" placeholder="Nome" class="form-control mb-2">
 
-                <div class="barra-black my-2"></div>
-                <i class="fa-solid fa-star icona-black px-1"></i>
-                <div class="barra-black my-2"></div>
+                    <input type="text" placeholder="email" class="form-control mb-2">
+
+                    <input type="phone" placeholder="Phone" class="form-control mb-2">
+
+                    <textarea name="" class="form-control mb-2" id="" cols="30" rows="10" placeholder="message"></textarea>
+
+                </div>
 
             </div>
 
-            <div class="mx-4">
-                <input type="text" class="form-control mb-2" placeholder="Name" aria-label="Username">
-                <input type="text" class="form-control mb-2" placeholder="Email Address" aria-label="Username">
-                <input type="text" class="form-control mb-2" placeholder="Phone Number" aria-label="Username">
-                <input type="text" class="form-control mb-2" placeholder="Message" aria-label="Username">
-            </div>
+            <button type="button" class="btn btn-success mb-2 mx-4">Send</button>
 
         </div>
 
-        <button type="button" class="btn btn-success mb-2 mx-4">Send</button>
-
+       
         <!-- FOOTER -->
         <footer class="bg-footer text-center">
 
@@ -180,10 +199,10 @@
 
                     <div class="d-flex justify-content-center">
 
-                        <div class="border p-2 rounded-5 mx-2"><i class="fa-brands fa-facebook-f icona"></i></div>
-                        <div class="border p-2 rounded-5 mx-2"><i class="fa-brands fa-google-plus-g icona"></i></div>
-                        <div class="border p-2 rounded-5 mx-2"><i class="fa-brands fa-twitter icona"></i></div>
-                        <div class="border p-2 rounded-5 mx-2"><i class="fa-brands fa-linkedin-in icona"></i></div>
+                        <i class="fa-brands fa-facebook-f icona"></i>
+                        <i class="fa-brands fa-google-plus-g icona"></i>
+                        <i class="fa-brands fa-twitter icona"></i>
+                        <i class="fa-brands fa-linkedin-in icona"></i>
 
                     </div>
                         
